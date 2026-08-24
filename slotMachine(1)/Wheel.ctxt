@@ -1,0 +1,29 @@
+#BlueJ class context
+#Sun Aug 23 22:23:09 COT 2026
+comment0.target=Wheel
+comment0.text=\r\n A Wheel holds a list of possible Symbols. At any time, one of them\r\n is "current" (the one showing). Spinning picks a new current symbol\r\n at random; placing sets it directly.\r\n\r\n @author  (tu nombre aqui)\r\n @version 1.0\r\n
+comment1.params=slot
+comment1.target=Wheel(int)
+comment1.text=\r\n Create an empty wheel located at the given horizontal slot\r\n (used only to decide where its symbols are drawn on screen).\r\n\r\n @param slot the horizontal slot index of this wheel (0-based).\r\n
+comment10.target=void makeInvisible()
+comment10.text=\r\n Make every symbol of this wheel invisible.\r\n
+comment2.params=color
+comment2.target=void addSymbol(java.lang.String)
+comment2.text=\r\n Add a new symbol of the given color to this wheel.\r\n\r\n @param color a valid CSS color name.\r\n
+comment3.params=color
+comment3.target=void delSymbol(java.lang.String)
+comment3.text=\r\n Remove the first symbol of the given color from this wheel.\r\n\r\n @param color the color to remove.\r\n
+comment4.params=color
+comment4.target=void place(java.lang.String)
+comment4.text=\r\n Place a specific symbol as the current one (without spinning).\r\n\r\n @param color the color of the symbol to show.\r\n
+comment5.target=void spin()
+comment5.text=\r\n Spin this wheel\: pick a random symbol among the available ones.\r\n
+comment6.target=Symbol current()
+comment6.text=\r\n Returns the symbol currently showing, or null if this wheel\r\n has no symbols.\r\n\r\n @return the current Symbol.\r\n
+comment7.target=java.lang.String[] symbols()
+comment7.text=\r\n Returns the colors of all symbols in this wheel, in order.\r\n\r\n @return an array of color names.\r\n
+comment8.target=int size()
+comment8.text=\r\n Returns how many symbols this wheel currently has.\r\n\r\n @return the number of symbols.\r\n
+comment9.target=void makeVisible()
+comment9.text=\r\n Make the current symbol of this wheel visible on screen.\r\n
+numComments=11
